@@ -1,0 +1,42 @@
+/* Utilities */
+.wid-50{
+    width: 50%;
+}
+.pad-25{
+    padding: 25px 0;
+}
+.line-height{
+    line-height: 2;
+}
+.aboutSec-container{
+    display: flex;
+    padding: 25px 0;
+    font-family: var(--RobotoSF);
+}
+.right-side{
+    text-align: right;
+}
+.right-side img{
+    width: 70%;
+    border-radius: 10% 10% 10% 44% / 6% 0 0 55%;
+}
+.left-side{
+    padding: 80px 0 0 20px;
+}
+.left-side h1{
+    font-size: 60px;
+}
+.developer{
+    color: #e0b79f;
+    font-style: italic;
+    letter-spacing: 5px;
+}
+.left-side a{
+    transition: .3s;
+    color: rgb(49, 49, 49);
+    background-color: #e0b79f;
+    padding: 5px 15px;
+}
+.left-side a:hover{
+    color: white;
+}

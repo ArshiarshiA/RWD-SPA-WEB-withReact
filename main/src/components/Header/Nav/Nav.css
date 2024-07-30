@@ -1,0 +1,43 @@
+.nav{
+    background-color: #785b4b;
+}
+.list-container{
+    max-width: 1100px;
+    margin: auto;
+}
+.list-container ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.list-container .list{
+    display: flex;
+}
+.list-container ul li {
+    padding: 25px 35px;
+}
+.list-container ul li a{
+    color: white;
+    font-family: var(--RobotoSF);
+    text-decoration: none;
+}
+.list-container ul span i{
+    cursor: pointer;
+    color: white;
+}
+/* NavLink Component */
+.active{
+    animation: active forwards .4s;
+}
+/* Active Animation */
+@keyframes active {
+    0%{opacity: 0}
+    100%{opacity: .5}
+}
+/* Menu */
+.menu{
+    display: none;
+    font-size: 35px;
+    color: white;
+    padding: 20px;
+}
