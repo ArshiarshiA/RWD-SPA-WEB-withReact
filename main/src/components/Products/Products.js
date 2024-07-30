@@ -1,3 +1,4 @@
+import SimpleParallax from 'simple-parallax-js'
 import entryImg from '../../assets/images/image2.jpg'
 
 export default function Product() {
@@ -11,7 +12,9 @@ export default function Product() {
                 <a href="#">read more</a>
             </div>
             <div className='wid-50 right-side'>
-                <img src={entryImg} alt="" />
+                <SimpleParallax>
+                    <img src={entryImg} alt="" />
+                </SimpleParallax>
             </div>
         </div>
     )

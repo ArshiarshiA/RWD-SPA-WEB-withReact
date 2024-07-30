@@ -1,4 +1,5 @@
 import entryImg from '../../assets/images/image1.jpg'
+import SimpleParallax from "simple-parallax-js";
 import './AboutSec.css'
 
 export default function AboutSec() {
@@ -12,7 +13,9 @@ export default function AboutSec() {
                 <a href="#">read more</a>
             </div>
             <div className='wid-50 right-side'>
-                <img src={entryImg} alt="" />
+                <SimpleParallax>
+                    <img src={entryImg} alt="" />
+                </SimpleParallax>
             </div>
         </div>
     )
