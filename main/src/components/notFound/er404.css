@@ -1,0 +1,26 @@
+.error-container{
+    background-color: #f5f2e1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: var(--RobotoSF);
+}
+.content-container{
+    width: 350px;
+    text-align: center;
+}
+.content-container h1{
+    font-size: 210px;
+    color: #785b4b;
+}
+.content-container p{
+    text-decoration: overline;
+    padding-bottom: 20px;
+}
+.content-container a{
+    color: white;
+    background-color: #785b4b;
+    padding: 10px 35px;
+    text-underline-offset: 5px;
+}
