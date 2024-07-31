@@ -1,5 +1,6 @@
 import logo from '../../assets/images/MAM.png'
 import './Footer.css'
+import './FooterRes.css'
 
 export default function Footer() {
     return (

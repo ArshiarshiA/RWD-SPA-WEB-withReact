@@ -1,0 +1,19 @@
+@media screen and (max-width : 687px){
+    .footer-list{
+        gap: 30px;
+        
+    }
+    .footer-list li{
+        width: 100%;
+    }
+    .footer-container{
+        padding: 60px 50px 35px 0;
+    }
+    .line{
+        width: 100%;
+    }
+    .bot-fot-side p{
+        width: 100%;
+        padding: 15px 0;
+    }
+}

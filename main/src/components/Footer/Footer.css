@@ -10,6 +10,7 @@ footer a{
 }
 .footer-list{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     font-family: var(--RobotoSF);
     max-width: 1200px;
@@ -48,6 +49,7 @@ footer a{
 }
 .bot-fot-side{
     display: flex;
+    flex-wrap: wrap;
     margin: auto;
     justify-content: space-between;
     padding: 30px 20px 15px 20px;
