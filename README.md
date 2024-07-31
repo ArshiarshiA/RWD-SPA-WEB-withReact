@@ -1,3 +1,7 @@
+![Main of Web](./src/assets/images/mainWeb.png)
+
+---
+
 # Why did I copy a component of the same shape four times?
 Because...
 I know it seems logical, why did I copy a component of the same shape four times just with different images and titles and did not use props?
