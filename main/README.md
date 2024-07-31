@@ -1,4 +1,4 @@
-[![Main of Web](./src/assets/images/mainWeb.png)]
+![Main of Web](./src/assets/images/mainWeb.png)
 
 ---
 
