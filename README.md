@@ -1,4 +1,4 @@
-![Main of Web](./mainWeb.png)
+![Main of Web](./main/mainWeb.png)
 
 ---
 
