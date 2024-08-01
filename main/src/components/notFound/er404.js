@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom'
-import AboutSec from '../MainWhyUsCompo/AboutSec'
-import './er404.css'
 import Footer from '../Footer/Footer'
+import './er404.css'
 
 export default function Er404() {
     return (

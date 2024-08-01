@@ -1,8 +1,12 @@
 import SimpleParallax from 'simple-parallax-js'
 import entryImg from '../../assets/images/image2.jpg'
+import Header from '../../components/Header/Nav/Nav';
+import Footer from '../../components/Footer/Footer'
 
 export default function Product() {
     return (
+        <>
+        <Header />
         <div className='aboutSec-container'>
             <div className='wid-50 left-side'>
                 <p className='developer'>Arshia Mansury</p>
@@ -17,5 +21,7 @@ export default function Product() {
                 </SimpleParallax>
             </div>
         </div>
+        <Footer />
+        </>
     )
 }

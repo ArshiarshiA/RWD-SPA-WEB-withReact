@@ -1,5 +1,6 @@
 import NavItem from './NavItem'
 import './Nav.css'
+import Social from '../SocialSec/Social'
 
 export default function Nav() {
 
@@ -11,6 +12,7 @@ export default function Nav() {
     ]
 
     return (
+        <>
         <nav className='nav'>
             <div className='list-container'>
                 <ul>
@@ -23,5 +25,7 @@ export default function Nav() {
                 </ul>
             </div>
         </nav>
+        <Social />
+        </>
     )
 }
