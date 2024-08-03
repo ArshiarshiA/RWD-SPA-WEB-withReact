@@ -5,7 +5,7 @@ import { useState } from 'react'
 
 export default function Nav() {
 
-    const [items , setItems] = useState(
+    const [items, setItems] = useState(
         [
             { title: 'Home', to: '/', id: 1 },
             { title: 'Products', to: '/products', id: 2 },
@@ -16,19 +16,21 @@ export default function Nav() {
 
     return (
         <>
-        <nav className='nav'>
-            <div className='list-container'>
-                <ul>
-                    <i className="fa fa-bars menu menu-active" aria-hidden="true"></i>
-                    <span><i className="fa-solid fa-cart-shopping"></i></span>
-                    <div className='list'>
-                        {items.map(item => <NavItem key={item.id} title={item.title} to={item.to} />)}
+            <header>
+                <nav className='nav'>
+                    <div className='list-container'>
+                        <ul>
+                            <i className="fa fa-bars menu menu-active" aria-hidden="true"></i>
+                            <span><i className="fa-solid fa-cart-shopping"></i></span>
+                            <div className='list'>
+                                {items.map(item => <NavItem key={item.id} title={item.title} to={item.to} />)}
+                            </div>
+                            <span><i className="fas fa-user"></i></span>
+                        </ul>
                     </div>
-                    <span><i className="fas fa-user"></i></span>
-                </ul>
-            </div>
-        </nav>
-        <Social />
+                </nav>
+                <Social />
+            </header>
         </>
     )
 }

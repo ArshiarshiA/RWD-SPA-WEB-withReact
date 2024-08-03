@@ -1,0 +1,13 @@
+.main-product-container{
+    max-width: 1300px;
+    padding: 40px 0;
+    margin: auto;
+}
+.Cards-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.title{
+    padding: 0 20px;
+    font-family: var(--RobotoSF);
+}
