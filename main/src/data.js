@@ -41,20 +41,20 @@ let data = [
     },
     {
         id: 6,
+        name: 'Benken watch with leather strap',
+        price: '$30',
+        category: 'leather products',
+        secCategory: 'watch',
+        img: 'https://parspng.com/wp-content/uploads/2023/06/watchpng.parspng.com-6-600x600.png'
+    },
+    {
+        id: 7,
         name: 'Leather belt',
         price: '$30',
         category: 'leather products',
         secCategory: 'belt',
         img: 'https://pngimg.com/uploads/belt/belt_PNG9570.png'
     },
-    {
-        id: 7,
-        name: 'Benken watch with leather strap',
-        price: '$30',
-        category: 'leather products',
-        secCategory: 'watch',
-        img: 'https://parspng.com/wp-content/uploads/2023/06/watchpng.parspng.com-6-600x600.png'
-    }
 ]
 
 export default data

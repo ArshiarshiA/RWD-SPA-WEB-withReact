@@ -1,13 +1,13 @@
 import { useParams } from "react-router-dom";
 import Footer from "../../components/Footer/Footer";
 import Nav from "../../components/Header/Nav/Nav";
-import data from "../../data";
+import productData from "../../data";
 import './Price.css'
 
 export default function Price() {
 
     let { id } = useParams()
-    let dataItem = data.find( dataBlock => dataBlock.id == id )
+    let dataItem = productData.find( dataBlock => dataBlock.id == id )
     let {name , price , img , category , secCategory} = dataItem;
 
     return (
