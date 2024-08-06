@@ -10,7 +10,8 @@ export default function Nav() {
             { title: 'Home', to: '/', id: 1 },
             { title: 'Products', to: '/products', id: 2 },
             { title: 'Services', to: '/services', id: 3 },
-            { title: 'Foresight', to: '/foresight', id: 4 }
+            { title: 'Foresight', to: '/foresight', id: 4 },
+            { title: 'Add Product' , to: '/addProduct', id: 5}
         ]
     )
 

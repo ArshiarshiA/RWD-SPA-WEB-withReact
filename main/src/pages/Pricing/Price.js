@@ -1,14 +1,24 @@
-import { useParams } from "react-router-dom";
+import { useBlocker, useParams } from "react-router-dom";
 import Footer from "../../components/Footer/Footer";
 import Nav from "../../components/Header/Nav/Nav";
-import productData from "../../data";
 import './Price.css'
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 export default function Price() {
+    
+    let { UrlId } = useParams();   
+    let [resData , setResData] = useState([])
+    
+    useEffect(() => {
+        axios
+        .get('http://localhost:5000/products')
+        .then( response => setResData(response.data))
+    } , [])
+        
 
-    let { id } = useParams()
-    let dataItem = productData.find( dataBlock => dataBlock.id == id )
-    let {name , price , img , category , secCategory} = dataItem;
+    let dataItem = resData.find( dataObject => dataObject.id === UrlId)
+    console.log(dataItem);
 
     return (
         <>
@@ -17,16 +27,16 @@ export default function Price() {
                 <div className="item-product">
                     <div className="item-product-content">
                         <div className="icon-container">
-                            <h1>{name}</h1>
+                            {/* <h1>{name}</h1> */}
                             <i className="fas fa-shopping-bag"></i>
                         </div>
                         <div className="icon-container">
-                            <p>{`${category} , ${secCategory}`}</p>
+                            {/* <p>{`${category} , ${secCategory}`}</p> */}
                             <i className="fas fa-tags"></i>
                         </div>
-                        <img src={img} alt="" />
+                        {/* <img src={img} alt="" /> */}
                         <div className="icon-container">
-                            <p>Price : {price}</p>
+                            {/* <p>Price : {price}</p> */}
                             <button>Add to cart</button>
                         </div>
                     </div>

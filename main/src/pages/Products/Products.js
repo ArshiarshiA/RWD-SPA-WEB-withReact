@@ -2,12 +2,19 @@ import Header from '../../components/Header/Nav/Nav';
 import Footer from '../../components/Footer/Footer'
 import Card from '../../components/Card/Card';
 import data from '../../data'
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import axios from 'axios'
 import './Products.css'
 
 export default function Product() {
 
-    let [itemData, setData] = useState(data)
+    let [itemData, setData] = useState([])
+    useEffect( () => {
+        axios
+            .get('http://localhost:5000/products')
+            .then( response => setData(response.data))
+    } , [])
+
 
     return (
         <>
