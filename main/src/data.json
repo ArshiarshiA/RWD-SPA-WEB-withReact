@@ -62,6 +62,12 @@
       "img": "https://parspng.com/wp-content/uploads/2023/02/shoespng.parspng.com-3-600x600.png",
       "price": "$250",
       "category": "shoe"
+    },
+    {
+      "id": "8e34",
+      "name": "Black leather coat",
+      "price": "$700",
+      "img": "https://www.pngall.com/wp-content/uploads/4/Black-Leather-Jacket-PNG-Clipart.png"
     }
   ]
 }

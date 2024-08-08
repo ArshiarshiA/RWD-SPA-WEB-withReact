@@ -12,7 +12,7 @@
     padding: 10px;
     border: none;
     outline: none;
-    background-color: rgba(63, 63, 63, 0.411);
+    background-color: rgb(0 0 0 / 7%);
     color: white;
     border-radius: 10px;
     transition: all .3s;

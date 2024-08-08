@@ -1,7 +1,6 @@
 import Header from '../../components/Header/Nav/Nav';
 import Footer from '../../components/Footer/Footer'
 import Card from '../../components/Card/Card';
-import data from '../../data'
 import { useEffect, useState } from 'react';
 import axios from 'axios'
 import './Products.css'

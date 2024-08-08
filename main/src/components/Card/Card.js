@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import './Card.css'
 import './CardRes.css'
 
-export default function ({ id , img , name , price , category , secCategory }) {
+export default function Card({ id , img , name , price , category = 'notSelected' , secCategory = 'notSelected' }) {
     return (
         <>
             <div className="item">

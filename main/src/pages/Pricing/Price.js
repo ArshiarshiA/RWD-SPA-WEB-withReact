@@ -1,4 +1,4 @@
-import { useBlocker, useParams } from "react-router-dom";
+import { Navigate, useNavigate, useParams } from "react-router-dom";
 import Footer from "../../components/Footer/Footer";
 import Nav from "../../components/Header/Nav/Nav";
 import './Price.css'
@@ -7,19 +7,23 @@ import axios from "axios";
 
 export default function Price() {
     
-    let { UrlId } = useParams();   
-    let [resData , setResData] = useState([])
-    
-    useEffect(() => {
+    const navigate = useNavigate()
+    const { id } = useParams();   
+    let [resData , setResData] = useState({})
+    let {name , price , img , category , secCategory} = resData
+
+    useEffect( () => {
         axios
-        .get('http://localhost:5000/products')
-        .then( response => setResData(response.data))
-    } , [])
-        
+        .get(`http://localhost:5000/products/${id}`)
+        .then( response => setResData(response.data) )
+    } , [] )
 
-    let dataItem = resData.find( dataObject => dataObject.id === UrlId)
-    console.log(dataItem);
-
+    const deleteHandler = () => {        
+        axios
+        .delete(`http://localhost:5000/products/${id}`)
+        .then( () => navigate('/products') )
+    }
+    
     return (
         <>
             <Nav />
@@ -27,17 +31,23 @@ export default function Price() {
                 <div className="item-product">
                     <div className="item-product-content">
                         <div className="icon-container">
-                            {/* <h1>{name}</h1> */}
+                            <h1>{name}</h1>
                             <i className="fas fa-shopping-bag"></i>
                         </div>
                         <div className="icon-container">
-                            {/* <p>{`${category} , ${secCategory}`}</p> */}
+                            <p>{`${category} , ${secCategory}`}</p>
                             <i className="fas fa-tags"></i>
                         </div>
-                        {/* <img src={img} alt="" /> */}
+                        <img src={img} alt="" />
                         <div className="icon-container">
-                            {/* <p>Price : {price}</p> */}
-                            <button>Add to cart</button>
+                            <p>Price : {price}</p>
+                            <button className="buttonStyle">Add to cart</button>
+                        </div>
+                        <div>
+                            <button onClick={deleteHandler} className="buttonStyle">
+                            <i style={{marginRight: '10px'}} className="fa fa-trash" aria-hidden="true"></i> 
+                            Delete Product   
+                            </button>
                         </div>
                     </div>
                 </div>
